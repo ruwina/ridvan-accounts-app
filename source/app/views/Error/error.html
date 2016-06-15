@@ -1,0 +1,29 @@
+<section class="page container error-page">
+    <div class="col-lg-6"><img src="../assets/img/error-img.png" align="right" alt="error page"></div>
+    <div class="col-lg-6 error-msg">
+
+        <p><strong>Message:</strong> {{@ER.text}}</p>
+
+        <p>
+            <check if="{{@ER.status}}">
+                <true><strong>Error Status:</strong> {{@ER.status}}</true>
+            </check>
+        </p>
+
+        <p>
+            <check if="{{@ER.path}}">
+                <true><strong>Error path:</strong> {{@ER.path}}</true>
+            </check>
+        </p>
+
+        <p>
+            <check if="{{@ER.date}}">
+                <true><strong>Time:</strong> {{@ER.date}}</true>
+            </check>
+        </p>
+
+        <!--<p>Error code: {{@ER.code}}</p>-->
+
+
+    </div>
+</section>
